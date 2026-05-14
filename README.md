@@ -28,23 +28,23 @@ https://github.com/user-attachments/assets/68b29914-dcfe-4b64-9238-ad8a2b0a5c9a
 
 
 
-**↑ interactive walkthrough** — date slicer driving all visuals, page navigation, hover tooltips, heatmap interactivity.
+**↑ interactive walkthrough** - date slicer driving all visuals, page navigation, hover tooltips, heatmap interactivity.
 
 ---
 
 ## The Question
 
-Is Germany on track to meet its 2030 renewable energy target — and where are the bottlenecks?
+Is Germany on track to meet its 2030 renewable energy target and where are the bottlenecks?
 
 This dashboard answers it through three analytical lenses:
 
-1. **The Headline** — how close are we to the target?
-2. **The Mix** — what's actually being generated, by what, and when in the day?
-3. **The Reality Check** — when does Germany *use* electricity, and does generation align with demand?
+1. **The Headline** : how close are we to the target?
+2. **The Mix** : what's actually being generated, by what, and when in the day?
+3. **The Reality Check** : when does Germany *use* electricity, and does generation align with demand?
 
 ---
 
-## Page 1 — Overview: Are We On Track?
+## Page 1 : Overview: Are We On Track?
 
 ![Page 1 Overview] <img width="2560" height="1440" alt="Screenshot 2026-05-14 184940" src="https://github.com/user-attachments/assets/326676f6-31c8-462b-ad94-589ea90f5b5a" />
 
@@ -55,7 +55,7 @@ Key elements: KPI strip with time-intelligence YoY comparison, headline trend li
 
 ---
 
-## Page 2 — Generation Mix Deep-Dive
+## Page 2 : Generation Mix Deep-Dive
 
 ![Page 2 Generation Mix]<img width="2560" height="1440" alt="Screenshot 2026-05-14 184956" src="https://github.com/user-attachments/assets/b5d33fea-7e65-470b-9967-366d0a57a683" />
 
@@ -63,13 +63,13 @@ Key elements: KPI strip with time-intelligence YoY comparison, headline trend li
 **Key insights**:
 - **Wind onshore is now Germany's #1 single source** (535 TWh over the 5-year window, ahead of even lignite)
 - **Nuclear vanished** from the mix in April 2023 (visible in the source × year heatmap matrix)
-- **Solar's daily profile** shows the classic noon peak — the visual story of why grid flexibility matters
+- **Solar's daily profile** shows the classic noon peak, the visual story of why grid flexibility matters
 
 The matrix uses conditional color formatting to turn the year-by-year table into an at-a-glance heatmap. Sources are color-encoded consistently across the dashboard (green = renewable, dark = fossil, purple = nuclear, gray = storage).
 
 ---
 
-## Page 3 — Consumption Reality Check
+## Page 3 : Consumption Reality Check
 
 ![Page 3 Consumption] <img width="2560" height="1440" alt="Screenshot 2026-05-14 185214" src="https://github.com/user-attachments/assets/e00c1bad-98ea-410f-8372-e2c4ed3fe699" />
 
