@@ -49,7 +49,7 @@ This dashboard answers it through three analytical lenses:
 ![Page 1 Overview] <img width="2560" height="1440" alt="Screenshot 2026-05-14 184940" src="https://github.com/user-attachments/assets/326676f6-31c8-462b-ad94-589ea90f5b5a" />
 
 
-**Headline finding**: Germany's renewable share climbed from 47% in early 2021 to summer 2025 peaks near 80%. The trajectory is real, but seasonal swings — solar-rich summers vs fossil-heavy winters — reveal the deeper systemic challenge.
+**Headline finding**: Germany's renewable share climbed from 47% in early 2021 to summer 2025 peaks near 80%. The trajectory is real, but seasonal swings like solar-rich summers vs fossil-heavy winters reveal the deeper systemic challenge.
 
 Key elements: KPI strip with time-intelligence YoY comparison, headline trend line with 2030 reference target, stacked area of the generation mix evolving over time, and an interactive date range slicer driving every visual on the page.
 
@@ -61,7 +61,7 @@ Key elements: KPI strip with time-intelligence YoY comparison, headline trend li
 
 
 **Key insights**:
-- **Wind onshore is now Germany's #1 single source** (535 TWh over the 5-year window — ahead of even lignite)
+- **Wind onshore is now Germany's #1 single source** (535 TWh over the 5-year window, ahead of even lignite)
 - **Nuclear vanished** from the mix in April 2023 (visible in the source × year heatmap matrix)
 - **Solar's daily profile** shows the classic noon peak — the visual story of why grid flexibility matters
 
@@ -74,15 +74,15 @@ The matrix uses conditional color formatting to turn the year-by-year table into
 ![Page 3 Consumption] <img width="2560" height="1440" alt="Screenshot 2026-05-14 185214" src="https://github.com/user-attachments/assets/e00c1bad-98ea-410f-8372-e2c4ed3fe699" />
 
 
-**The mismatch**: Generation peaks at noon. Consumption peaks at 11:00 with industrial demand and stays elevated through 18:00 — but solar drops sharply after 14:00. That afternoon-evening gap is the German energy transition's *real* unsolved problem: **not generation, but storage and grid flexibility**.
+**The mismatch**: Generation peaks at noon. Consumption peaks at 11:00 with industrial demand and stays elevated through 18:00 ,but solar drops sharply after 14:00. That afternoon-evening gap is the German energy transition's *real* unsolved problem: **not generation, but storage and grid flexibility**.
 
-The day-of-week × hour heatmap matrix reveals the underlying industrial signal cleanly — sharp weekday demand walls 09:00–13:00, distinct weekend dips.
+The day-of-week × hour heatmap matrix reveals the underlying industrial signal cleanly, sharp weekday demand walls 09:00–13:00, distinct weekend dips.
 
 ---
 
 ## Technical Highlights
 
-**Data Source**: [SMARD by Bundesnetzagentur](https://www.smard.de) — Germany's official electricity market data platform. Hourly granularity, April 2021 – April 2026, Germany-wide, ~480K rows across Generation and Consumption.
+**Data Source**: [SMARD by Bundesnetzagentur](https://www.smard.de) - Germany's official electricity market data platform. Hourly granularity, April 2021 - April 2026, Germany-wide, ~480K rows across Generation and Consumption.
 
 **Data Modeling**:
 - **Star schema** with two dimension tables (`Date_Dim` for daily granularity, `Hour_Dim` for hour-of-day) and two fact tables (Generation in long format via unpivot, Consumption)
@@ -97,8 +97,6 @@ The day-of-week × hour heatmap matrix reveals the underlying industrial signal 
 
 **Power Query M ETL**: handled German number formats, missing values for retired generators (nuclear post-April-2023 stored as `"-"`), unpivot from wide to long format, date-only column derivation, and hour extraction.
 
-**Custom Theme**: JSON theme file applied site-wide for consistent typography (Segoe UI) and color encoding across all visuals on all pages.
-
 ---
 
 ## Visual Types Used
@@ -109,7 +107,7 @@ Cards · Line charts with reference lines · Stacked area chart · Donut chart �
 
 ## Stack
 
-Power BI Desktop · DAX · Power Query M · Custom Theme JSON · SMARD CSV
+Power BI Desktop · DAX · Power Query M ·  SMARD CSV
 
 ---
 
@@ -127,14 +125,5 @@ Power BI Desktop · DAX · Power Query M · Custom Theme JSON · SMARD CSV
 
 ---
 
-## What I Learned
-
-- Designing **star schema** data models for analytical reporting, including building dimension tables from scratch with DAX `CALENDAR` and `GENERATESERIES`
-- Writing **time-intelligence DAX** that survives filter-context shifts across multiple fact tables
-- **Color encoding for meaning** — green = renewable everywhere, dark = fossil everywhere — a small thing recruiters subconsciously notice
-- **Power Query M** for cleaning real-world messy CSVs (German number formats, missing-value handling, unpivoting wide tables)
-- The analyst discipline of *writing insight text directly from data inspection*, not from energy-blog clichés
-
----
 
 **Built by [Avishkar Potale](https://github.com/Avishkar1117)**
