@@ -111,15 +111,6 @@ Power BI Desktop · DAX · Power Query M ·  SMARD CSV
 
 ---
 
-## How to View
-
-| What | Where |
-|---|---|
-| 🎬 Interactive walkthrough video | Top of this README |
-| 🖼️ Static screenshots | `/screenshots` folder |
-| 📄 PDF export | `screenshots/energiewende-dashboard.pdf` |
-| 🗂️ Full interactive file | `energiewende.pbix` — open with Power BI Desktop |
-| 🎨 Theme file | `energiewende-theme.json` |
 
 > A public Power BI Service URL was blocked at the university tenant level (a common security restriction in German academic Microsoft 365 environments). The `.pbix` file fully reproduces all interactivity locally, and the walkthrough video at the top demonstrates it live.
 
