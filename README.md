@@ -8,12 +8,13 @@ Built on hourly electricity market data from Bundesnetzagentur (SMARD), covering
 
 ## 🎬 Demo
 
-<!-- DRAG VIDEO HERE: when editing on github.com, drag-drop your MP4 file onto this line. GitHub auto-uploads and embeds. -->
+(./screen recording/page 1.mp4)
 
+(./screen recording/page 2.mp4)
 
+(./screen recording/page 3.mp4)
 
-
-**↑ 25-second interactive walkthrough** — date slicer driving all visuals, page navigation, hover tooltips, heatmap interactivity.
+**↑ interactive walkthrough** — date slicer driving all visuals, page navigation, hover tooltips, heatmap interactivity.
 
 ---
 
