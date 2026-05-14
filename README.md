@@ -1,3 +1,5 @@
+
+
 # Germany's Energy Transition Dashboard
 
 **A 3-page interactive Power BI analysis of Germany's path to 80% renewable energy by 2030.**
@@ -8,11 +10,23 @@ Built on hourly electricity market data from Bundesnetzagentur (SMARD), covering
 
 ## 🎬 Demo
 
-(./screen recording/page 1.mp4)
+Page 1
 
-(./screen recording/page 2.mp4)
+https://github.com/user-attachments/assets/2023b9d6-098b-49ed-9b26-c7e881e471f0
 
-(./screen recording/page 3.mp4)
+
+
+Page 2
+
+https://github.com/user-attachments/assets/59263fa3-630f-4f0c-baf5-9be9dc342969
+
+
+
+Page 3
+
+https://github.com/user-attachments/assets/68b29914-dcfe-4b64-9238-ad8a2b0a5c9a
+
+
 
 **↑ interactive walkthrough** — date slicer driving all visuals, page navigation, hover tooltips, heatmap interactivity.
 
